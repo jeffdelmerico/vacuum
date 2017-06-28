@@ -24,6 +24,13 @@ class Agent {
   const Battery* battery_;
   // Not owned by the agent.
   const int* time_;
+  // Should the agent return to the charging station
+  bool return_to_charging_station_;
+  // Current direction that we are following
+  Direction current_direction_;
+
+  // Choose a random direction to follow
+  Direction ChooseRandomDirection();
 };
 
 #endif  // AGENT_H_

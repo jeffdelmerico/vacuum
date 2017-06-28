@@ -16,6 +16,24 @@
       "revId": "510a6385dbd32e1a3277ab83ac14ca7d6b99b5c7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2ed275ef_5db3ff1d",
+        "filename": "bad_map.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1011622
+      },
+      "writtenOn": "2017-06-28T12:46:17Z",
+      "side": 1,
+      "message": "I considered it, but the linter told me it was too long.",
+      "parentUuid": "69565131_3b87a000",
+      "revId": "510a6385dbd32e1a3277ab83ac14ca7d6b99b5c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

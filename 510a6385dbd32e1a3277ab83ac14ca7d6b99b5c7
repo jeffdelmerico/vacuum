@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "69565131_3b87a000",
+        "filename": "bad_map.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1011620
+      },
+      "writtenOn": "2017-06-28T12:43:54Z",
+      "side": 1,
+      "message": "have you considered keeping this in the same line?",
+      "revId": "510a6385dbd32e1a3277ab83ac14ca7d6b99b5c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

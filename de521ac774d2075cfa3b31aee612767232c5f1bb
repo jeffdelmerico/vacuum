@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57226847_cce682eb",
+        "filename": "agent.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011620
+      },
+      "writtenOn": "2017-06-28T14:04:25Z",
+      "side": 1,
+      "message": "Maybe call it ChooseOrthogonal direction, once ChooseRandomDirection is split in two?",
+      "revId": "de521ac774d2075cfa3b31aee612767232c5f1bb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9efedc7a_2a7bc92b",
+        "filename": "agent.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011620
+      },
+      "writtenOn": "2017-06-28T14:04:25Z",
+      "side": 1,
+      "message": "This function seems to be doing more than just random directions. It also does orthogonal directions.\nCould you split this function into two functions?",
+      "revId": "de521ac774d2075cfa3b31aee612767232c5f1bb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

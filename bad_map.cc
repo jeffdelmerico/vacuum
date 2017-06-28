@@ -1,9 +1,9 @@
-#include "map.h"
+#include "bad_map.h"
 
 #include <cassert>
 #include <iostream>
 
-o#include "utils.h"
+#include "utils.h"
 
 using std::cout;
 using std::endl;
@@ -114,13 +114,14 @@ Map Map::TwoRoomsMap() {
   bool o = false;
   for (int x = 1; x < x_size - 1; ++x) {
     for (int y = 1; y < y_size - 1; ++y) {
-      //ERR: < 0.05, otherwise too many obstacles.
+      // ERR: < 0.05, otherwise too many obstacles.
       if (Random() > 0.05) {
         map.obstacles_map_.Set(x, y, 1);
       }
 
       if (y == y_size / 2) {
-        //ERR1: here some comment wouldn't be bad. This is not immediate to understand.
+        // ERR1: here some comment wouldn't be bad. This is not immediate to
+        // understand.
         if (o || Random() > static_cast<float>(x) / (x_size - 1)) {
           map.obstacles_map_.Set(x, y, 1);
           map.dirt_map_.Set(x, y, 0);
@@ -131,13 +132,15 @@ Map Map::TwoRoomsMap() {
         }
       }
 
-      // ERR: Why is the dirt different here (0.85 in the RandomMap()). At least should be commented.
+      // ERR: Why is the dirt different here (0.85 in the RandomMap()).
+      // At least should be commented.
       if (Random() > 0.7) {
-        // ERRO: why not call RandomMap() instead of doing all the obstacles and dirt again?
-        // Dirt things tend to stick to each other.
+        // ERRO: why not call RandomMap() instead of doing all the obstacles
+        // and dirt again? Dirt things tend to stick to each other.
         for (int i = -1; i < 2; ++i) {
-          for (int j = -1; j < 2; ++i) {// ERR: ++j
-            if (x + i <= 0 || y + j <= 0 || x + i >= x_size - 1 || y + j >= y_size - 1) {
+          for (int j = -1; j < 2; ++i) {  // ERR: ++j
+            if (x + i <= 0 || y + j <= 0 ||
+                x + i >= x_size - 1 || y + j >= y_size - 1) {
               continue;
             }
             if (Random() > 0.5)
@@ -155,8 +158,8 @@ Map Map::TwoRoomsMap() {
   // ERR: bad variable name format, why camel case now.
   // ERR: const?
   // ERR: bad casting.
-  int xAgentPosition = int(Random() * x_size);
-  int yAgentPosition = int(Random() * y_size);
+  int xAgentPosition = static_cast<int>(Random() * x_size);
+  int yAgentPosition = static_cast<int>(Random() * y_size);
   // ERR: What if this is over an obstacle?? What should we do?
   agent_position_ = Point{xAgentPosition, yAgentPosition};
 

@@ -1,5 +1,5 @@
-#ifndef MAP_H_
-#define MAP_H_
+#ifndef BAD_MAP_H_
+#define BAD_MAP_H_
 
 #include "geometry.h"
 #include "perception.h"
@@ -61,4 +61,4 @@ class Map {
   int initial_dirt_;
 };
 
-#endif  // MAP_H_
+#endif  // BAD_MAP_H_
